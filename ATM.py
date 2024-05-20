@@ -1,4 +1,4 @@
-amount = 4000
+amount = 3850
 
 if amount%50==0:
     if amount >= 500:
