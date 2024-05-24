@@ -33,5 +33,17 @@ print(b)
 
 print(a[::-1])
 
+c = "hello Robert"
+print(c.upper())
+
+d="oral"
+print(d.capitalize())
+
+e= ("HELLO EVERYONE").lower()
+print(e)
+
+f=e.upper()
+print(f)
+
     
     
