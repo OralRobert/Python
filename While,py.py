@@ -93,6 +93,31 @@ while row<=111:
             col-=1
         row-=1
         print()
+
+#normal print
+a = [[['Robert','anuj','mishraji','jadhav','nair','more','jagtap','ingle']]]
+i = 0
+while i<len(a[0][0]):
+    print(a[0][0][i])
+    i+=1
+
+#normal print
+b = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+i = 0
+while i<len(a):
+    j = 0
+    while j<len(i):
+        print(j)
+        j+=1
+    i+=1
+
+
+
+    
+             
+             
+    
+     
             
             
         

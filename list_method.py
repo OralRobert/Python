@@ -37,3 +37,7 @@ print(ab.index(4))
 ab.reverse()
 print(ab)
 
+
+a=[1,2,3,4,5,6,7,8]
+a.clear()
+print(a)
