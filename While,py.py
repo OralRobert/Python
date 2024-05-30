@@ -94,7 +94,7 @@ while row<=111:
         row-=1
         print()'''
 
-
+# Normal print
 a = [[['Robert','anuj','mishraji','jadhav','nair','more','jagtap','ingle']]]
 i = 0
 while i<len(a[0][0]):
