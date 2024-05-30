@@ -82,7 +82,7 @@ while i<=17:
     
         
             
-row=111
+'''row=111
 while row<=111:
     col = 111
     while col<=row:
@@ -92,24 +92,25 @@ while row<=111:
             print(" ",end=" ")
             col-=1
         row-=1
-        print()
+        print()'''
 
-#normal print
+
 a = [[['Robert','anuj','mishraji','jadhav','nair','more','jagtap','ingle']]]
 i = 0
 while i<len(a[0][0]):
     print(a[0][0][i])
     i+=1
 
-#normal print
+
 b = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 i = 0
-while i<len(a):
+while i<len(b):
     j = 0
-    while j<len(i):
-        print(j)
-        j+=1
+    while j<len(b[i]):
+                print(b[i][j])
+                j+=1
     i+=1
+        
 
 
 
