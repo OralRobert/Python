@@ -1,7 +1,8 @@
 for i in range(1,11,1):
     print(i)
-
-n=18
+    
+# to find prime no. or not
+n=17
 for i in range(2,n,1):
     if n%i==0:
         print(n,"not an prime no")
@@ -10,12 +11,13 @@ else:
     print(n,"is an prime no")
 
 
-for n in range(1,101,1):
-    for j in range(2,n,1):
-        if n%j==0:
-            break
-    else:
-        print(n)
+#prime n0. 1 to 100
+for n in range(2,101,1):
+        for j in range(2,n,1):
+            if n%j==0:
+                break
+        else:
+            print(n)
 
 
 

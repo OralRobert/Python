@@ -1,4 +1,4 @@
-a = input("enter yoyr name : ")
+'''a = input("enter yoyr name : ")
 b = int(input("enter yopur age : "))
 print(type(a),type(b))
 
@@ -40,5 +40,24 @@ average_marks = total_marks/3
 
 print("Average marks: ", average_marks)
 
+per = int(input("Enter Percentage : "))
+print(per)
+if per>=90:
+    print("A+ Grade")
+elif per<90 and per>=60:
+    print("A grade")
+elif per<60 and per>=50:
+    print("B grade")
+elif per<50 and per>=35:
+    print("C grade")
+else:
+    print("F")'''
 
+richter_magnitude = float(input(" Enter magnitude = "))
 
+if richter_magnitude > 10:
+    print("good")
+elif richter_magnitude < 6.5:
+    print("bad")
+else:
+    print("average")

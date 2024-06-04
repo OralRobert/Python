@@ -13,17 +13,19 @@ print(type(b))
 print(len(b))
 
 
+# print a particular word which contains the given letter
+#last letter(i)
 c=['robert','anuj','mishraji','saud','jadhav','nair']
 for i in c:
     if i[-1]=='i':
         print(i)
 
-
+#r
 for i in c:
     if 'r' in i:
         print(i)
 
-
+#r 
 for i in c:
     for j in i:
         if j=='r':
@@ -83,6 +85,7 @@ for i in a:
 print(e)
 print(o)
 
+#separate duplicate no. to another list
 a = [1,2,3,4,5,6,7,7,7,6,6,6,4]
 b = []
 c1 = []
@@ -93,6 +96,8 @@ for i in a:
         c1.append(i)
 print(b)
 print(c1)
+
+# find no.of duplicates
 for i in b:
     c2 =0
     for j in c1:
