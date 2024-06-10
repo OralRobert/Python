@@ -25,11 +25,14 @@ for i in range(1,6):
         print(i,end=" ")
     print()
 
-#assignemnt
+'''assignemnt
 P = int(input("enter your value : " ))
 N = int(input("enter your value : " ))
 R = int(input("enter your value : " ))
-print((P*N*R)/100)
+print((P*N*R)/100)'''
+
+string = "Hello World"
+print(string[0])
 
     
 
