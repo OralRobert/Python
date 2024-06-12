@@ -45,5 +45,47 @@ print(e)
 f=e.upper()
 print(f)
 
-    
+g = "Hi How are You"
+print(g.title())
+
+print(g.swapcase())
+
+#it will check the data is in alphabet,the output will beT/F 
+h = "hdfbjhd"
+print(h.isalnum())
+
+#it will check the data is in alphabet but lower case,the output will beT/F 
+i = "hkbcjhSDbc"
+print(i.isalpha())
+
+#it will check the data is in int,the output will beT/F 
+j = "132323423"
+print(j.isdigit())
+
+#Methods to check weather the data is lower or upper case
+##print(isupper())
+##print(islower())
+
+# replaceses the word we wanted
+k = "Python is low level language"
+l = k.replace('low','high')
+print(l)
+
+#splits in given place and put data into list
+m = "python-java-php-.net"
+n = m.split('-')
+print(n)
+
+date = '2022/06/12'
+o = date.split('/')
+print(o)
+
+#gives only value assingned to index
+p="Robert"
+for i in p:
+    print(i)
+
+#gives only index value
+for i in range(len(p)):
+    print(i)
     

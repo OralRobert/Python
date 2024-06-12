@@ -33,6 +33,7 @@ print((P*N*R)/100)'''
 
 string = "Hello World"
 print(string[0])
+print(string[2:9:1])
 
     
 
