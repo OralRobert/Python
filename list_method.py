@@ -1,6 +1,9 @@
 a = [1,2,3,'abc','xyz']
 a.append("Added")
 print(a)
+a.extend([3,5,87,5])
+print(a)
+
 
 a = [1,2]
 b = [3,4]
@@ -42,3 +45,9 @@ print(ab)
 a=[1,2,3,4,5,6,7,8]
 a.clear()
 print(a)
+
+ab=[1,3,45,67,8,32]
+ab.sort()
+print(ab)
+ab.reverse()
+print(ab)
