@@ -1,6 +1,8 @@
 #basics in dictionary
 a = {'name':'ABC',0:'kuch bhi','age':78,'name':'Robert'}
 print(a)
+b = a.copy()
+print(b)
 print(len(a))
 print(type(a))
 
@@ -12,9 +14,15 @@ print(a)
 for i in a:
     print(f"{i} = {a[i]}")
 
+#returns data in tuple
 print(a.keys())
 print(a.values())
 print(a.items())
+
+#Assign value
+x = (1,2,3,4,5)
+y = 0
+print(dict.fromkeys(x,y))
 
 #normal print
 for k,v in a.items():
@@ -27,7 +35,6 @@ data = {}
 for i in range(0,len(keys),1):
     data[keys[i]] = values[i]
 print(data)
-
 
 #Methods in dictionary
 a = {'name':'ABC',0:'kuch bhi','age':78}

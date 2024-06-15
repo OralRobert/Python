@@ -29,10 +29,13 @@ a[3][3] = tuple(b)
 
 print(a)
 
+#to reverse the tuple
 a = (1,2,3,44,5,6,6)
 print(a[::-1])
 
+#count a particular element
 print(a.count(6))
+#get a index value of particular element
 print(a.index(5))
 
 #normal print using loops 

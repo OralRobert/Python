@@ -25,6 +25,10 @@ print(s)
 b= a[3:7:1]
 print(b)
 
+s = 'python_programming'
+print(s[-15:-16]) #no output and no error
+print(s[2:3:-1]) #no output and no error
+
 b= a[-12:-8:1]
 print(b)
 
