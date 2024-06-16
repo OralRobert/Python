@@ -1,4 +1,12 @@
-P = int(input("enter your value : " ))
-N = int(input("enter your value : " ))
-R = int(input("enter your value : " ))
-print((P*N*R)/100)
+##user = input("enter your string:")
+##j = "aeiou"
+##r = ""
+##for i in user:
+##    if i not in j:
+##        r+=i
+##
+##print(r)
+
+import random
+i = [random.randint(1,100,k=10)for i in range(10)]
+print(i)
