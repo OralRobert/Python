@@ -26,3 +26,21 @@ for j in i:
 print("even no. in list",e)
 print("odd no. in list",o)
 
+
+##Write a program that has the dictionary of your friends’ names as keys and phone
+##numbers as its values. Print the dictionary in a sorted order. Prompt the user to
+##enter the name and check if it is present in the dictionary. If the name is not present,
+
+then enter the details in the dictionary.
+my_dict = {'jenish':'7304795581','robin':'7304795582','venus':'7304795583',
+           'adhithya':'7304795584'}
+print(sorted(my_dict.items()))
+name = input('enter name : ')
+no = int(input('enter no. : '))
+if name in my_dict:
+    print('Name is already present in my dict')
+else:
+    my_dict[name] = no
+
+print(my_dict)
+
