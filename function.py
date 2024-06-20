@@ -164,6 +164,42 @@ R=['Big_boss','sholey','karan_arjun']
 r.shuffle(R)
 print(R)
 
+print()
+###lambda function: a function without name is called as lambda function.
+##it is also called anonymous function.lamda function always start with lambda
+##keyword
+#sytex
+#lambda argument:expression
+
+a = lambda x:print(x**2)
+a(4)
+
+a = lambda x:x**2
+print(a(4))
+
+add = lambda x,y:print(x+y)
+add(3,4)
+
+add = lambda x,y:x+y
+print(add(3,4))
+
+result = lambda x,y:(x+y,x-y)
+print(result(3,4))
+add,sub = result(3,4)
+print(add)
+print(sub)
+
+add = lambda x,y=5:x+y
+print(add(3))
+
+add = lambda x=3,y=5:x+y
+print(add())
+
+sub = lambda y,x:x-y
+print(sub(x=3,y=9))
+
+
+
 
 
 
