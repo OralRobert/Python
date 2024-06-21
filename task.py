@@ -51,3 +51,32 @@ def pow(n,p):
 
 print(pow(2,3))
 
+#6.create two variable and swap its value ex a=10,b=20 after swapping a=20,b=10
+a=20
+b=10
+
+y = a 
+a = b
+b = y
+print(a,b)
+
+#7. create a tuple like(1,2,3,4,3,2) and count number of ocurrences of 3
+a = (1,2,3,4,3,2,3)
+count = 0
+for i in a:
+    if i==3:
+        count+=1
+print(count)
+
+#8. cretae a tuple like(1,2,3,4,3,2) and print the index number of 3
+a = (1,2,3,4,3,2)
+for i in a:
+    if i == 3:
+        print(a.index(i))
+
+#9. create a tuple like (1,2,3,4,3,2) and print the (2,3,4)only
+a = (1,2,3,4,3,2)
+print((a[1],a[2],a[3]))
+
+#10. create a tuple like (1,2,3,4,3,2) and remove 3 in this tuple
+a = (1,2,3,4,3,2)

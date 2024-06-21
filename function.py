@@ -198,6 +198,60 @@ print(add())
 sub = lambda y,x:x-y
 print(sub(x=3,y=9))
 
+#Higher order function
+#Built in higher order function
+#1. Filter function
+
+number = [11,22,33,44,55,66]
+def even_fun(x):
+    if x%2==0:
+        return True
+filter_object = filter(even_fun,number)
+print(filter_object)
+print(list(filter_object))
+print(list(filter_object))
+
+
+number = [11,22,33,44,55,66]
+def even_fun(x):
+    if x%2==0:
+        return True
+filter_object = list(filter(even_fun,number))
+print(filter_object)
+
+
+
+b = [2,3,4,5,6,7,8,9,23]
+def prime_fun(y):
+    for i in range(2,y,1):
+        if y%i==0:
+            return False
+    else:
+        return True
+filter_ = list(filter(prime_fun,b))
+print(filter_)
+
+#2. Map function
+
+n= [1,2,3,4,5,6]
+def square(x):
+    return x*x
+
+y=list(map(square,n))
+print(y)
+
+a = [3,4,5,6]
+
+def fac(b):
+    for i in range(1,b):
+        b = i*b
+    return b
+
+fil = list(map(fac,a))
+print(fil)
+           
+    
+
 
 
 

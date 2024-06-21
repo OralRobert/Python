@@ -119,6 +119,27 @@ for i in b:
      for j in i:
          print(j)
          
-     
+l = [['e'],['l'],['e'],['p'],['h'],['a'],['n'],['t']]
+i = 0
+while i<8:
+    print('i',i+1)
+    for j in l[i]:
+        print('{}'.format(j),end='')
+    break
+print()
 
+##l = [['e'], ['l'], ['e'], ['p'], ['h'], ['a'], ['n'], ['t']]
+##i = 0
+##
+##while i < 8:
+##    print('i', i+1)
+##    for j in l[i]:  # Corrected syntax: access element using l[i] instead of l(i)
+##        print('{}'.format(j), end='')
+##    print()  # Print a newline after printing each sublist
+##    i += 1  # Increment i to avoid an infinite loop
 
+a = [[['Robert','anuj','mishraji','jadhav','nair','more','jagtap','ingle']]]
+for i in a:
+    for j in i:
+        print(j[0])
+    

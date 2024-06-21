@@ -49,13 +49,12 @@ score = 0;
 while level<5:
     print('Level',level+1) #('Level {}'.format(level+1))
     print('Create 3 words using the given letters')
-    break
+    
 
     for c in letters[level]:
-        continue
-        print('{}\t'.format(c),end='');
-    print()
-    
-    
+        print('{}\t'.format(c),end='')
+    break
+
+
     
     
