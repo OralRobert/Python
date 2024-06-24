@@ -110,7 +110,35 @@ while i<len(b):
                 print(b[i][j])
                 j+=1
     i+=1
-        
+    
+#task     
+x=1
+while (x<11):
+    x=x+1
+    break
+print(x)
+
+x=1
+while (x<11):
+    x=x+1
+    pass
+print(x)
+
+x = 0
+while(x<11):
+    print(x)
+    x=x+1
+    if (x==5):
+        continue
+
+x=0
+while (x<11):
+    x=x+1
+    if(x==5):
+        break
+    print(x)
+
+
 
 
 

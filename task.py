@@ -165,3 +165,19 @@ print(c)
 a = {1,2,3,4}
 a.remove(3)
 print(a)
+
+#22 create a set like {1,2,3,4} and remove 3 using discard method and understand
+#what's the difference between remove and pop
+a = {1,2,3,4}
+a.discard(3)
+print(a)
+a.pop()
+print(a)
+
+#23. create a string like "hello world" and count "o"
+a = "hello world"
+b = a.count("o")
+print(b)
+
+
+
