@@ -241,6 +241,7 @@ def square(x):
 y=list(map(square,n))
 print(y)
 
+#
 a = [3,4,5,6]
 
 def fac(b):
@@ -250,20 +251,68 @@ def fac(b):
 
 fil = list(map(fac,a))
 print(fil)
-           
-    
 
 
 
+#
+def A(x,y):
+    c=x+y
+    def B(d):
+        print(d+1)
+    return B(c)
+print(A(2,3))
 
+#
+def A(x,y):
+    return x+y
+B=A
+print(B(2,3))
 
+#
+def A(n):
+    if (n>5):
+        return 1
+    return 2
+x = A(2)+A(10)
+print(10)
 
+#
+def A():
+    pass
+print(A())
 
+#
+def A(x,y):
+    print(x+y)
+print(A(2,3))
 
+#
+def A(x,y):
+    print(x+y)
+B = A
+B(2,3)
 
+#
+def A(x,y):
+    return x+y
+B = A
+B(2,3)
 
+#
+def A(n):
+    if (n > 5):
+        return 1
+    else:
+        return 2
+    return
+print(A(5))
 
-    
+#
+def A(n):
+    for i in range(1,11):
+        return n*i
+    return n
+print(A(2))
 
 
 
