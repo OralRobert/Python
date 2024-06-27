@@ -31,7 +31,7 @@ print("odd no. in list",o)
 ##numbers as its values. Print the dictionary in a sorted order. Prompt the user to
 ##enter the name and check if it is present in the dictionary. If the name is not present,
 
-then enter the details in the dictionary.
+#then enter the details in the dictionary.
 my_dict = {'jenish':'7304795581','robin':'7304795582','venus':'7304795583',
            'adhithya':'7304795584'}
 print(sorted(my_dict.items()))
@@ -43,4 +43,28 @@ else:
     my_dict[name] = no
 
 print(my_dict)
+
+for i in range(100,201,1):
+    if i%2==0:
+        print(i)
+
+# write a program that receives 3 sets of values
+# of p, n, and r and calculates simple interest for each
+sets = 3
+pr = []
+no = []
+Ra = []
+
+for i in range(sets):
+    P = float(input("enter your principal : " ))
+    N = float(input("enter your no of year : " ))
+    R = float(input("enter your Rate of interest : " ))
+
+    pr.append(P)
+    no.append(N)
+    Ra.append(R)
+    
+for i in range(sets):
+    Total = (pr[i]*no[i]*Ra[i])/100
+    print(Total)
 

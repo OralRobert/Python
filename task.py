@@ -115,7 +115,7 @@ a = (17,)
 print(type(a))
 
 #14. create empty set
-a = {}
+#a = {}
 a = set()
 print(type(a))
 
@@ -178,6 +178,167 @@ print(a)
 a = "hello world"
 b = a.count("o")
 print(b)
+c = a.index("o")
+print(c)
 
+#24. create a string like "hello world" and find "z" or index "z" and understand
+#difference between index and count
+a = "hello world"
+for i in a:
+    if i == "z":
+        print(f"z found")
+    else:
+        print(f"z not found in {i}")
+
+#25. create a list like ["p","y","t","h","o","n"] and print "python"
+a = ["p","y","t","h","o","n"]
+b = "".join(a)
+print(b)
+
+#26.create a string "pyhton" and print ["p","y","t","h","o","n"]
+a = "python"
+b = list(a)
+print(b)
+
+#27. create a string like "     python" and print "python"
+a = "     pyhton"
+b = a.strip()
+print(b)
+
+#28. create a list [1,2,3,4] and print it like [1,2,3,4,5]
+a = [1,2,3,4]
+a.append(5)
+print(a)
+
+#29. create a list [1,2,3,4] and print[1,2,3,4,1,2,3,4]
+a = [1,2,3,4]
+b = [1,2,3,4]
+a.extend(b)
+print(a)
+
+#30. create a list [1,2,3,4] and print [1,2,3,4,"p","y","t","h","o","n"]
+a = [1,2,3,4]
+b = ["p","y","t","h","o","n"]
+a.extend(b)
+print(a)
+
+#31. create a list [1,2,3,4] and remove 2 using pop function
+a = [1,2,3,4]
+a.pop(1)
+print(a)
+
+#32. create a list [1,2,3,4] and print [1,5,3,4] using insert function
+a = [1,2,3,4]
+a.insert(1,5)
+print(a)
+
+#33. create a list [1,2,3,4] and print[1,5,3,4] using negative indexing in insert
+#function.
+a = [1,2,3,4]
+a.insert(-3,5)
+print(a)
+
+#34. create a list [1,2,3,4] and print[4,3,2,1]
+a = [1,2,3,4]
+a.reverse()
+print(a)
+
+#35. create a list [1,4,3,2] and print[1,2,3,4] using function
+a = [1,4,3,2]
+a.sort()
+print(a)
+
+#36. create a dict{"a":10,"b":12,"c":14} and clear it{}
+a = {"a":10,"b":12,"c":14}
+a.clear()
+print(a)
+
+#37. create a empty set{}
+a = set()
+print(a)
+
+#38. create a empty dict
+a = {}
+print(a)
+
+#39. create a dict{"a":10,"b":20,"c":30} and print {"b":20,"c":30}
+a = {"a":10,"b":20,"c":30}
+a.pop("a")
+print(a)
+
+#40. create a set {1,2,3,4} and remove 2
+a = {1,2,3,4}
+a.remove(2)
+print(a)
+
+#moderate question
+
+#1. create a string "hello" and print >> ll:2 times without using count method
+a = "hello"
+b = 0
+for i in a:
+    if i == "l":
+        c = ''.join(i)
+        b+=1
+print(f"{c}:{b}")
+
+#2. create a string "hello" and sort it
+a = "hello"
+b = ''.join(sorted(a))
+print(b)
+
+#3. Take input string from user and find vowels
+'''a = input("user input : ")
+for i in a:
+    if i in "aeiou":
+        print(i)'''
+
+#4. create a list [(1,2),{"a":10},"abv",[1,2,3,4]] and find the data type of
+#each element
+
+a = [(1,2),{"a":10},"abv",[1,2,3,4]]
+print(type(a[0]))
+print(type(a[1]))
+print(type(a[2]))
+print(type(a[3]))
+
+#5. print A to Z in sequence like A B C D E...........XYZ
+for i in range(ord('a'),ord('z'),+1):
+    print(chr(i),end=" ")
+
+#6. print ten time "hii"
+print()
+a = " hii "
+print(a * 10)
+
+#7. print right angle triangle using while loop
+i=5
+while i<=5:
+    print('*',end='')
+    i-=1
+    print()
+    break
+
+for i in range(100,201,1):
+    if i%2==0:
+        print(i)
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+        
 
 
