@@ -312,16 +312,138 @@ a = " hii "
 print(a * 10)
 
 #7. print right angle triangle using while loop
-i=5
-while i<=5:
-    print('*',end='')
-    i-=1
+row = 1
+while row<=5:
+    col=1
+    while col<=row:
+        print('*',end='')
+        col+=1
+    row+=1
     print()
-    break
+    
+#8. print right angle triangle using for loop
+for i in range(1,6):
+    for j in range(1,i+1):
+        print('*',end='')
+    print()
 
-for i in range(100,201,1):
-    if i%2==0:
-        print(i)
+#9. take input from user and check its even or odd
+'''while True:
+    user = int(input("enter a no to find even or odd :"))
+    if user == 0:
+        break
+
+    if user%2==0:
+        print(f"{user} is a even number")
+    else:
+        print(f"{user} is a odd number")'''
+    
+
+#10. take input from user and check the number is divisible by 5 or not
+'''while True:
+    user = int(input("enter a number  to check it is divisible by 5 or not :"))
+    if user == 0:
+        break
+
+    if user % 5==0:
+        print(f"{user} is divisible by 5")
+    else:
+        print(f"{user} is not divisible by 5")'''
+
+#11. write a progeramme to check whether a person is eligible for voting or
+#not (accept age from user)
+'''while True:
+    user = int(input("enter your age :"))
+    if user == 0:
+        break
+    if user >= 18:
+        print("he is eligible")
+    else:
+        print("he is not eligible")'''
+
+#12. print 1 to 10 using for loop
+for i in range(1,11):
+    print(i)
+
+#13. write a program to check weather a number divisible by 7 or not
+'''while True:
+    user = int(input("enter your no to check weather it is divisible by 7 or not:"))
+    if user == 0:
+        break
+    if user % 7==0:
+               print(f"{user} is divisible by 7")
+    else:
+        print(f"{user} is not divisible by 7")'''
+
+#14. wap to display "hello" if number entered by user is even, otherwise print
+        #bye
+'''user = int(input("enter your digit :"))
+if user % 2 ==0:
+           print("Hii.....")
+else:
+    print("Bye......")'''
+
+#15. Take input from user and check its data type
+'''while True:
+    user = eval(input("Check your data type : "))
+    Type = type(user)
+    print(Type)'''
+
+#16. create set like {1,2,3,4,5} and update it {1,2,3,4,5,6,7,8,9}
+a = {1,2,3,4,5}
+a.update({6,7,8,9})
+print(a)
+
+#17. create a set like {1,2,3,4,5} and add the element like {1,2,3,4,5,6,7,8,9}
+a = {1,2,3,4,5}
+a.add(6)
+a.add(7)
+a.add(8)
+a.add(9)
+print(a)
+
+#18. take string from user like "python" and print["p","y","t","h","o","n"]
+'''user = input()
+for i in user:
+    print([i],end="")'''
+
+#19. take input from user in int data type without using int() function
+'''user = eval(input())
+print(type(user))'''
+
+#20. create a string like "7 apple 8 mango 9 banana" and print thr int values
+#only which dynamic state
+##a = "7 apple 8 mango 9 banana"
+##word = a.split()
+##print(word)
+##
+##inte = []
+##
+##for i in word:
+    
+# Example string
+my_string = "7 apple 8 mango 9 banana"
+
+# Split the string into words
+words = my_string.split()
+
+# Initialize an empty list to store integers
+integers = []
+
+# Iterate through each word in the list
+for word in words:
+    # Try to convert the word to an integer
+    try:
+        integer_value = int(word)
+        integers.append(integer_value)
+    except ValueError:
+        # If conversion to int fails, continue to next word
+        continue
+
+# Print the integer values extracted
+print("Integer values:", integers)
+
+
 
 
 
