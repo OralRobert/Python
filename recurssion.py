@@ -46,6 +46,7 @@
 ##fibo(3)=fibo(3-2)+fibo(3-1)
 ##fibo(n)=fibo(n-2)+fibo(n-1)
 
+
 def fibo(n):
     if n==1:
         return 0
@@ -61,3 +62,6 @@ print(fibo(n))
 #sum of first n no. using recurssion
 #wap for printing n to 1 sequence
 #wap for factorial using recurssion
+
+
+

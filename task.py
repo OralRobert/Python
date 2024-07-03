@@ -413,41 +413,35 @@ print(type(user))'''
 
 #20. create a string like "7 apple 8 mango 9 banana" and print thr int values
 #only which dynamic state
-##a = "7 apple 8 mango 9 banana"
-##word = a.split()
-##print(word)
-##
-##inte = []
-##
-##for i in word:
-    
-# Example string
-my_string = "7 apple 8 mango 9 banana"
+a = "7 apple 8 mango 9 banana"
+word = a.split()
+print(word)
 
-# Split the string into words
-words = my_string.split()
+inte = []
 
-# Initialize an empty list to store integers
-integers = []
-
-# Iterate through each word in the list
-for word in words:
-    # Try to convert the word to an integer
+for i in word: 
     try:
-        integer_value = int(word)
-        integers.append(integer_value)
-    except ValueError:
-        # If conversion to int fails, continue to next word
+        integer = int(i)
+        inte.append(integer)
+    except:
         continue
+print(inte)
 
-# Print the integer values extracted
-print("Integer values:", integers)
+#21. take input from user like 1234 and print the every second element 0 eg 1020
+a = input("Enter a number : ")
+modified_chars = []
 
+for i,j in enumerate(a):
+    if i%2 == 1:
+        modified_chars.append('0')
+    else:
+        modified_chars.append(j)
 
+#print(modified_chars)
 
+mod_num = ''.join(modified_chars)
 
-
-
+print(mod_num)
 
 
 

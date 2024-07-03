@@ -14,6 +14,7 @@ a=10
 b=20
 add(a,b)
 print(add(20,30))
+print(add(10,60))
 
 #function with no argument but return value
 def add():
@@ -261,12 +262,14 @@ def A(x,y):
         print(d+1)
     return B(c)
 print(A(2,3))
+print()
 
 #
 def A(x,y):
     return x+y
 B=A
 print(B(2,3))
+print()
 
 #
 def A(n):
@@ -275,29 +278,29 @@ def A(n):
     return 2
 x = A(2)+A(10)
 print(10)
-
+print()
 #
 def A():
     pass
 print(A())
-
+print()
 #
 def A(x,y):
     print(x+y)
 print(A(2,3))
-
+print()
 #
 def A(x,y):
     print(x+y)
 B = A
 B(2,3)
-
+print()
 #
 def A(x,y):
     return x+y
 B = A
 B(2,3)
-
+print()
 #
 def A(n):
     if (n > 5):
@@ -306,7 +309,7 @@ def A(n):
         return 2
     return
 print(A(5))
-
+print()
 #
 def A(n):
     for i in range(1,11):
