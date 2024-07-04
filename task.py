@@ -418,7 +418,6 @@ word = a.split()
 print(word)
 
 inte = []
-
 for i in word: 
     try:
         integer = int(i)
@@ -426,9 +425,26 @@ for i in word:
     except:
         continue
 print(inte)
+#or
+a = "7 apple 8 mango 9 banana"
+b = [i for i in a.split() if i.isdigit()]
+print(b)
+#or
+a = "7 apple 8 mango 9 banana"
+for i in a.split():
+    if i.isdigit():
+        print(i,end = '')
+print()
+#or
+a = "7 apple 8 mango 9 banana"
+b = a.split()
+print(b)
+for i in b:
+    if i == int:
+        print(i)
 
 #21. take input from user like 1234 and print the every second element 0 eg 1020
-a = input("Enter a number : ")
+'''a = input("Enter a number : ")
 modified_chars = []
 
 for i,j in enumerate(a):
@@ -437,11 +453,81 @@ for i,j in enumerate(a):
     else:
         modified_chars.append(j)
 
-#print(modified_chars)
+print(modified_chars)
 
 mod_num = ''.join(modified_chars)
 
-print(mod_num)
+print(mod_num)'''
+
+#22. take gmail from user like "abc@gmail.com" and print its name only "abc"
+'''a = input("Enter your email : ")
+b = a.split('@')
+print(b)
+print(b[0])'''
+
+#23. write a program to calculate the electricity bill(accept number of unit
+#from user) according to the following criteria:
+
+##unit                        price
+##first 100 units         no charge
+##next 100 units          rs 5 per unit
+##After 200 units         rs 10 per unit
+##(for example if input unit is 350 than total bill amount is rs2000)
+'''a = int(input("electricity bill : "))
+if a <= 100:
+    print("0")
+if a <=200:
+    c = (a -100) * 5
+    print(c)
+else:
+    c = 100*5 +(a-200)*10
+    print(c)'''
+
+#24. WAP a program to check whether the last digit of a number entered by user
+#is divisible by 3
+'''while True:
+    a = int(input("Enter a num to check it is divisible by 3 or not:"))
+    if a % 3==0:
+        print("Num is divisible by 3")
+    else:
+        print("Num not divisible by 3")'''
+
+#25. write a program to determine whether a number accepted from the user is
+#divisible by 2 and 3 both
+'''while True:
+    a = int(input("Enter a num to check it is divisible by 2 and 3 or not:"))
+    if a % 2 == 0 and a % 3 == 0:
+        print("Num is divisible by 2&3")
+    else:
+        print("Num is not divisible by 2&3")'''
+
+#26. Accept the age of 4 people and display the youngest one
+#27. Accept the age of 4 people and display the oldest one
+'''a = []
+for i in range(4):
+    age = int(input(f" Enter the age of person {i + 1} :"))
+    a.append(age)
+
+young = min(a)
+old = max(a)
+print("the youngest age among the 4 people : ",young)
+print("the oldest age among the 4 people : ",old)'''
+
+#28. wap to check whether an year is leap year or not
+'''while True:
+    year = int(input("Enter a year to check whether it is leap year or not:"))
+    if year % 4 == 0 and year % 100 != 0:
+        print(year,"is a leap year")
+    else:
+        print(year,"is not a leap year")'''
+
+#29. wap to check whether an year is leap year or not
+while True:
+    year = int(input("Enter a year to check whether it is leap year or not:"))
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print(year,"is a leap year")
+    else:
+        print(year,"is not a leap year")
 
 
 
