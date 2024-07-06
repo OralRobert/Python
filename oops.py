@@ -130,19 +130,19 @@ class A:
 a = A()
 a.show()
 
-class A:
-    def show(self):
-        self.name = input('Enter your name:')
-        self.age = int(input('Enter your age: '))
-        self.salary = int(input('Enter salary: '))
-    def display(self):
-        print('My name is ',self.name)
-        print('My age is ',self.age)
-        print('salary is',self.salary)
-
-a = A()
-a.show()
-a.display()
+##class A:
+##    def show(self):
+##        self.name = input('Enter your name:')
+##        self.age = int(input('Enter your age: '))
+##        self.salary = int(input('Enter salary: '))
+##    def display(self):
+##        print('My name is ',self.name)
+##        print('My age is ',self.age)
+##        print('salary is',self.salary)
+##
+##a = A()
+##a.show()
+##a.display()
 
 
 class A:
@@ -163,8 +163,8 @@ class A:
     b=20
 
     def demo(s):
-        s.a=s.a+1
-        A.b=A.b+1
+        s.a=s.a+1   # by calling object name
+        A.b=A.b+1   #by calling class name
         print(s.a,A.b)
 
 x = A()
@@ -172,6 +172,98 @@ x.demo()
 
 y= A()
 y.demo()
+
+print() 
+#constructors => __init__ method runs automatically when object is created
+#which is used to initialize the instance object
+
+class A:
+    def __init__(s):
+        print("krush")
+        s.id=101
+        s.name='kru'
+        s.salary=25025
+
+    def display(s):
+        print('id is',s.id)
+        print('name is',s.name)
+        print('salary is ',s.salary)
+        
+a=A()    #consturctor runs automatically when object is created
+a.display()
+
+
+##class A:
+##    def __init__(s):
+##        s.id=int(input('enter the id '))
+##        s.name=input('enter the name ')
+##        s.salary=int(input('enter the salary '))
+##    def display(s):
+##        print(f'id is {s.id}, name is {s.name} and salary is {s.salary}')
+##a=A( )
+##
+##a.display()
+
+
+
+class A:
+    def __init__(s,name,age,salary):
+        s.name=name
+        s.age=age
+        s.salary=salary
+    def display(s):
+        print(s.name,s.age,s.salary)
+    def __str__(s):
+        return s.name + " " + str(s.age) +" " + str(s.salary)
+a=A('kru',23,151515)
+a.display()
+print(a)  #__str__ method runs when object gets printed
+
+class A:
+    def display(s,name,age):
+        s.email='kru@gmail.com'
+        print(name,age,s.email)
+        print('python dev')
+
+    def show(s):
+        print(s.email)
+        s.display('KJ',22)
+        print('java dev')
+
+    def demo(k):
+        print(k.email)
+        print(a.email)
+
+a=A()
+a.display('kru',211)
+a.show()
+a.demo()
+
+##destructor => is a member method of calss it delete the memory of object
+##it can b called with object :-  __del__
+
+##garbage collector:
+##a progra, to delete reference
+##it runs automatically
+##it does mamory management
+
+class A:
+    def __init__(j):
+        j.name='KJ'
+        print('python debv')
+    def show(k):
+        print("java dev")
+    def __del__(k):
+        print("Object deleted ")
+a=A()
+a.show()
+del a
+#a.show()  # it will not execute coz objejct a deleted by destructor method
+
+
+
+
+
         
 
 
