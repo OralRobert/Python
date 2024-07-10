@@ -522,12 +522,52 @@ print("the oldest age among the 4 people : ",old)'''
         print(year,"is not a leap year")'''
 
 #29. wap to check whether an year is leap year or not
-while True:
+'''while True:
     year = int(input("Enter a year to check whether it is leap year or not:"))
     if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
         print(year,"is a leap year")
     else:
-        print(year,"is not a leap year")
+        print(year,"is not a leap year")'''
+
+#30. write a program to check whether an year is leap year or not,without using
+#(and),(or) keywords
+year = 2003
+if year % 4 == 0:
+        print(f'{year} is a leap year')
+        if year % 100 != 0:
+            print(f'{year} is a leap year')
+            if year % 400 == 0:
+                print(f'{year} is a leap year')
+            else:
+                print(f'{year} is not a leap year')
+        else:
+            print(f'{year} is not a leap year')
+else:
+    print(f'{year} is not a leap year')
+
+#31. WAP to check whether a number entered is three digit number or not
+'''a = int(input('Enter your number : '))
+if a > 99 and a < 1000:
+        print('A is a three digit no.')
+else:
+    print('A ia not a three digit no.')'''
+
+#32. WAP to check whether a person is senior citizen
+'''while True:
+    age = int(input('Enter your age : '))
+    if age > 60:
+        print('person is a senior citizen')
+    else:
+        print('person is not a senior citizen')'''
+
+#33. WAP which will add(sum)all the elements of list
+a = [1,2,3,4,5,6]
+print(sum(a))
+    
+
+
+
+
 
 
 

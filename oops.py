@@ -193,16 +193,16 @@ a=A()    #consturctor runs automatically when object is created
 a.display()
 
 
-##class A:
-##    def __init__(s):
-##        s.id=int(input('enter the id '))
-##        s.name=input('enter the name ')
-##        s.salary=int(input('enter the salary '))
-##    def display(s):
-##        print(f'id is {s.id}, name is {s.name} and salary is {s.salary}')
-##a=A( )
-##
-##a.display()
+class A:
+    def __init__(s):
+        s.id=int(input('enter the id '))
+        s.name=input('enter the name ')
+        s.salary=int(input('enter the salary '))
+    def display(s):
+        print(f'id is {s.id}, name is {s.name} and salary is {s.salary}')
+a=A( )
+
+a.display()
 
 
 
