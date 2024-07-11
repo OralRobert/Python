@@ -193,7 +193,7 @@ a=A()    #consturctor runs automatically when object is created
 a.display()
 
 
-class A:
+'''class A:
     def __init__(s):
         s.id=int(input('enter the id '))
         s.name=input('enter the name ')
@@ -202,7 +202,7 @@ class A:
         print(f'id is {s.id}, name is {s.name} and salary is {s.salary}')
 a=A( )
 
-a.display()
+a.display()'''
 
 
 
@@ -259,6 +259,174 @@ a=A()
 a.show()
 del a
 #a.show()  # it will not execute coz objejct a deleted by destructor method
+
+#inheritance
+#Types of inheritance
+##1. single level inheritance
+##2. Multilevel inheritance
+##3. hirariechal inheritance
+##4. Multiple inheriatnce
+##5. Hybrid inheritance
+
+# single level inheritance
+#A class derived from another class is known as single level inheritance
+
+class A:
+    def show(s):
+        print('python developer')
+
+class B(A):
+    def display(s):
+        print('java developer')
+
+a = B()    # To acess parent and child always make object of child
+a.display()
+a.show()
+
+# Multilevel inheriatnce
+#A class derived from another derived class is known as Multilevel inheritance
+
+class A:
+    a = 10
+    def show(s):
+        print('Grand parent method called')
+class B(A):
+    b = 20
+    def display(s):
+        print('parent method called')
+class C(B):
+    c = 30
+    def data(s):
+        print(s.a+s.b+s.c)
+        print('child method called')
+
+x = C()
+x.data()
+x.display()
+x.show()
+
+#hirariechal inheriatnce
+#More than one child class is derived from single base class is called
+#hirariechal inheritance
+
+class A:
+    a = 10
+    def show(s):
+        print('python developer')
+class B(A):
+    b = 10
+    def display(s):
+        print('Java developer')
+class C(A):
+    c = 30
+    def data(s):
+        print('full stack developer')
+x = C()
+x.data()
+x.show()
+#x.display() (it will show error because class C is not derived with class B
+
+#Multiple inheritance
+# one child class has multiple parent is known as Multiple inheritance
+
+class Engineer:
+    def study(s):
+        print('Engineer study method called')
+    def show(s):
+        print('Engineer show method called')
+class doctor:
+    def study(s):
+        print('doctor study method called')
+    def display(s):
+        print('doctor display method called')
+class student(Engineer,doctor):
+    def demo(s):
+        print('Pharmacist')
+x = student()
+x.display()
+x.show()
+x.study() #(always first parameter will be called)
+
+    
+#polymorphism
+
+# polymorphism means many form
+# An entity can work in multiple role.this capability is called as polymorphism
+# 1) function overriding
+# 2) function overloading
+
+#function overriding
+# in function overriding we can declare a function in base class and derived
+#class with same name and same parameter
+
+class A:
+    def display(self):
+        print('python developer')
+
+class B(A):
+    def display(self):
+        print('java developer')
+
+ob=B()
+ob.display()
+
+# function overloading
+# More than one function with same name defined in same class and call with
+#different parameter this process is known as method overloading
+# but python does not support overloading method but we have alternative way
+
+##class A:
+##    def show(self):
+##        print('Hiii')
+##    def show(self,x):
+##        print('bye')
+##    def show(self,x,y):
+##        print('welcome')
+##
+##x=A()
+##a.show(10)
+##a.show(10,30)
+
+
+class A:
+    def show(self,x,y):
+        print(x+y)
+
+a = A()
+a.show(10,30)
+
+
+class A:
+    def show(self,x=90,y=100):
+        print(x+y)
+
+a=A()
+a.show(10,30)
+
+class A:
+    def show(self,x=None,y=None):
+        print(x+y)
+
+a=A()
+a.show(10,30)
+
+
+
+class A:
+    def show(self,a=None,b=None,c=None):
+        if(a!=None and b!=None and c!=None):
+            print(a+b+c)
+        elif(a!=None and b!=None):
+            print(a+b)
+        else:
+            print(a)
+
+x=A()
+x.show(10)
+x.show(2,3)
+x.show(10,20,30)
+
+
 
 
 

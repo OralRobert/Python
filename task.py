@@ -563,7 +563,31 @@ else:
 #33. WAP which will add(sum)all the elements of list
 a = [1,2,3,4,5,6]
 print(sum(a))
-    
+
+#34. wap to print maximum number number without using max function
+a = [23,6,546,4,334]
+b = a[0]
+for i in a:
+    if i>b:
+        b = i
+print(b)
+
+#35. wap to print minimum number without using min function
+a = [23,43,6,8,45]
+b = a[0]
+for i in a:
+    if i<b:
+        b = i
+print(b)
+
+#36. wap to square all element of list note
+a = [1,5,3,9]
+def square(x):
+    return x*x
+
+squa = list(map(square,a))
+print(squa)
+
 
 
 
