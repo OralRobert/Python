@@ -588,7 +588,18 @@ def square(x):
 squa = list(map(square,a))
 print(squa)
 
+#37. WAP to print all the elements in list which are divisible by 3
+a = int(input('Enter a no. to check wheather it is divisible by 3 or not : '))
+if a % 3 == 0:
+    print(f'{a} is divisible by 3')
+else:
+    print(f'{a} is not divisible by 3')
 
+#38. Wap to print all the elements which are greater than 100
+a = int(input('Enter your no. to check wheathe it is greater than 100 : ')
+while True:
+    if a > 100:
+        print(f'{a})
 
 
 

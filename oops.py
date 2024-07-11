@@ -425,6 +425,107 @@ x=A()
 x.show(10)
 x.show(2,3)
 x.show(10,20,30)
+print()
+#exceptional handeling an exception is an event, which occurs during the
+#execution of a program, that interrupt the normal flow of the program's
+#instructions.
+# the try block which is used to test a block of code for errors.
+#the except block used to handle the errors.
+
+'''print('pyhton developer')
+a = int(input('Enter the first number: '))
+b = int(input('Enter the second number: '))
+try:
+    print(a/b)
+except:
+    print('exception handled')
+print('java developer')'''
+
+print('hiii')
+a = [11,22,33,44,55]
+try:
+    print(a[len(a)])
+except:
+    print('list index out of range')
+
+print('hello')
+
+
+print('hiii')
+a = [11,22,33,44,55]
+try:
+    print(a[len(a)])
+except Exception as e:
+    print(e)
+
+print('hello')
+
+
+print('pyhton developer')
+
+'''try:
+    a = int(input('Enter the first number: '))
+    b = int(input('Enter the second number: '))
+    print(a/b)
+except Exception as e:
+    print(e)
+print('java developer')'''
+
+
+try:
+    print('thane')
+    print(int('demo'))
+    print(2/0)
+    print('dadar')
+except ZeroDivisionError as e:
+    print(e)
+except ValueError as v:
+    print('value error',v)
+except Exception as e:
+    print('exception handled',e)
+except:
+    print('exception handeled')
+
+k = []
+try:
+    print(k[2])
+    print('thane')
+    try:
+        print(9/0)
+    except Exception as e:
+        print(e)
+    print('Mumbai')
+    try:
+        print(abc)
+    except Exception as e:
+        print(e)
+except:
+    print('outer exception handeled')
+
+else:
+    print('It will execute onl when exception is not occured')
+
+
+k = []
+try:
+    #print(k[2])
+    print('thane')
+    try:
+        print(9/0)
+    except Exception as e:
+        print(e)
+    print('Mumbai')
+    try:
+        print(abc)
+    except Exception as e:
+        print(e)
+except:
+    print('outer exception handeled')
+
+else:
+    print('It will execute onl when exception is not occured')
+finally:
+    print('It always be executed')
 
 
 
