@@ -59,6 +59,18 @@ r = 10
 t = 5
 simple_int(p,r)
 
+# Arbitary argument(variable length parameter) #*args #**kwargs
+def simple(*args):
+    for i in args:
+        print(i*3)
+simple(2,3,4,5,6)
+
+def data(**kwargs):
+    for i,j in kwargs.items():
+        print(i,":",j)
+data(name = "Robert",age = 27,Roll_no = 76)
+    
+print()
 #local variable
 def display():
     a=10

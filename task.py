@@ -589,17 +589,33 @@ squa = list(map(square,a))
 print(squa)
 
 #37. WAP to print all the elements in list which are divisible by 3
-a = int(input('Enter a no. to check wheather it is divisible by 3 or not : '))
+'''a = int(input('Enter a no. to check wheather it is divisible by 3 or not : '))
 if a % 3 == 0:
     print(f'{a} is divisible by 3')
 else:
-    print(f'{a} is not divisible by 3')
+    print(f'{a} is not divisible by 3')'''
 
 #38. Wap to print all the elements which are greater than 100
-a = int(input('Enter your no. to check wheathe it is greater than 100 : ')
-while True:
-    if a > 100:
-        print(f'{a})
+'''a = [int(i) for i in input('Enter space between nos : ').split()]
+print(a)
+for i in a:
+    if i > 100:
+        print(i)'''
+
+#39. Wap to find the total length of all string element in a list eg
+        #["py","thon"],>>[2,4]
+a = ["py","thon"]
+##print(len(a[0]))
+##print(len(a[1]))
+b = []
+for i in a:
+    b.append(len(i))
+    print(b)
+
+#40. Wap to print all elements in dict
+d ={"s1": 50, "s2": 67, "s3": 78, "total": 195}
+for k,v in d.items():
+    print(k ,":", v)
 
 
 
@@ -609,7 +625,19 @@ while True:
 
 
 
-                   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -617,5 +645,4 @@ while True:
 
 
         
-
 
