@@ -617,6 +617,55 @@ d ={"s1": 50, "s2": 67, "s3": 78, "total": 195}
 for k,v in d.items():
     print(k ,":", v)
 
+#high level question
+#1. Take a list and sort it without using sort function(ascending)
+a = [23,54,7,1,67]
+b = len(a)
+for i in range(b):
+    for j in range(b-1):
+        if a[j]>a[j+1]:
+            a[j],a[j+1] = a[j+1],a[j]
+print(a)
+
+#2. Take a list and sort it without using sort function(descending)
+a = [23,54,7,1,67]
+b = len(a)
+for i in range(b):
+    for j in range(b-1):
+        if a[j]<a[j+1]:
+            a[j],a[j+1] = a[j+1],a[j]
+print(a)
+
+#3. Take list and find the highest element without using max function
+a = [23,54,7,1234,32,29,245,75]
+b = a[0]
+for i in a:
+    if i>b:
+        b = i
+        print(b)
+
+#4. Take a list and find the second highest element
+a = [23,54,7,123,32,29,245,75]
+b = len(a)
+for i in range(b):
+    for j in range(b-1):
+        if a[j] < a[j+1]:
+            a[j] , a[j+1] = a[j+1] ,a[j]
+print(a[1])
+
+#5. Take a list and find the lowest element with using min function
+a = [23,54,7,123,32,29,245,75]
+b = min(a)
+print(b)
+
+#6. Take a dictionary and print the highest key value pair
+a = {'f' : 23,'g' : 54,'c' : 7,'d' : 123,'e' : 32}
+v = list(a.values())
+k = list(a.keys())
+print(k[v.index(max(v))],max(v))
+
+
+
 
 
 

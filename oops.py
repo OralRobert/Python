@@ -527,18 +527,86 @@ else:
 finally:
     print('It always be executed')
 
+print()
+print('thane')
+try:
+    raise NameError()
+except:
+    print('exception handeled')
+print('Mumbai')
 
 
+print('thane')
+try:
+    raise InvalidAgeError()
+except:
+    print('exception handeled')
+print('Mumbai')
 
 
+class InvalidAgeError(Exception):
+    pass
+print('thane')
+try:
+    raise InvalidAgeError()
+except:
+    print('exception handeled')
+print('Mumbai')
 
 
+class InvalidAgeError(Exception):
+    def __str__(self):
+        return 'Invalid age error detected'
+print('thane')
+try:
+    raise InvalidAgeError()
+except InvalidAgeError as e:
+    print(e)
+print('Mumbai')
+
+class InvalidAgeError(Exception):
+    def __str__(self):
+        return 'Invalid age detected'
+age = int(input('Enter your age:'))
+if (age>=18):
+    print('You can vote')
+else:
+    try:
+        raise InvalidAgeError()
+    except Exception as e:
+        print(e)
+
+class InvalidAgeError(Exception):
+    def __str__(self):
+        return 'Invalid age detected'
+age = int(input('Enter your age:'))
+if (age>=18):
+    print('You can vote')
+else:
+    try:
+        raise InvalidAgeError()
+    except InvalidAgeError as e:
+        print(e)
         
 
+#super method
+class A:
+    def __init__(self,name,age):
+        print('python developer')
+        print(name,age)
+    def show(self):
+        print('Hii')
 
+class B(A):
+    def __init__(self,name,age):
+        super().__init__('raj',32)
+        print('java developer')
+        print(name,age)
 
+    def display(self):
+        print('Hello')
 
-
+b = B('Robert',26)
 
 
 
