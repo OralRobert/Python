@@ -436,7 +436,7 @@ print()
 a = int(input('Enter the first number: '))
 b = int(input('Enter the second number: '))
 try:
-    print(a/b)
+    print(a/b) #5/0
 except:
     print('exception handled')
 print('java developer')'''
@@ -480,9 +480,9 @@ try:
 except ZeroDivisionError as e:
     print(e)
 except ValueError as v:
-    print('value error',v)
+    print('value error :',v)
 except Exception as e:
-    print('exception handled',e)
+    print('exception handled :',e)
 except:
     print('exception handeled')
 

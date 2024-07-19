@@ -141,42 +141,7 @@ myfun()
 print(y,a)
 print()
 
-# Modules and pakage
-import math as m
-print(m.sqrt(4))
-print(m.factorial(5))
-print(m.pow(2,3))
-print(m.floor(15.9)) #round down number
-print(m.ceil(15.2))  #round up number
-print(m.floor(-15.9)) #round down number
-print(m.ceil(-15.2))  #round up number
 
-s = 'python_programming'
-print(s[-15:-16]) #no output and no error
-print(s[2:3:-1]) # no output and no error
-
-import random as r
-print(r.randrange(20))
-print(r.randrange(2,8,2))
-print(r.randrange(2))
-#print(r.randrange(6,2)) gives error 
-
-# to include both lower and higher value we can use randint but no step value
-print(r.randint(6,6))
-print(r.randint(2,8))
-#print(r.randint(6,2)) gives error
-
-#gives float value and there is no step
-print(r.uniform(2,5))
-
-#choose any data randomly from list
-l=[11,22,33,44,'Robert']
-print(r.choice(l))
-
-# the list of data will be shuffled in every output
-R=['Big_boss','sholey','karan_arjun']
-r.shuffle(R)
-print(R)
 
 print()
 ###lambda function: a function without name is called as lambda function.
@@ -329,5 +294,7 @@ def A(n):
     return n
 print(A(2))
 
+##a = open('oral','w+')
+##print(a)
 
 

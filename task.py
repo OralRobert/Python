@@ -663,6 +663,37 @@ a = {'f' : 23,'g' : 54,'c' : 7,'d' : 123,'e' : 32}
 v = list(a.values())
 k = list(a.keys())
 print(k[v.index(max(v))],max(v))
+print(max(v))
+
+#7. Take a dictionary and print the lowest key value pair
+a = {'f' : 23,'g' : 54,'c' : 7,'d' : 123,'e' : 32}
+v = list(a.values())
+k = list(a.keys())
+print(k[v.index(min(v))],min(v))
+
+#8. create a list like [1,2,3,4] and print the elements without using loop
+a = [1,2,3,4]
+print(*a)
+#or
+a = [1,2,3,4]
+print(''.join(map(str,a)))
+
+a = 'Robert'
+print(''.join(map(str,a)))
+
+#9. create a string "ABCD" and convert into "abcd" without using lower and upper
+#method
+a = "ABCD"
+b = "abcd"
+for i in a:
+    for i in b:
+        a[0]= b[0]
+        print(i)
+        
+    
+
+
+
 
 
 
