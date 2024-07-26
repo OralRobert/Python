@@ -659,14 +659,14 @@ b = min(a)
 print(b)
 
 #6. Take a dictionary and print the highest key value pair
-a = {'f' : 23,'g' : 54,'c' : 7,'d' : 123,'e' : 32}
+a = {'f' : 23,'g' : 54,'i' : 7,'d' : 123,'e' : 32}
 v = list(a.values())
 k = list(a.keys())
 print(k[v.index(max(v))],max(v))
-print(max(v))
+#print(max(v))
 
 #7. Take a dictionary and print the lowest key value pair
-a = {'f' : 23,'g' : 54,'c' : 7,'d' : 123,'e' : 32}
+a = {'f' : 23,'g' : 54,'i' : 7,'d' : 123,'e' : 32}
 v = list(a.values())
 k = list(a.keys())
 print(k[v.index(min(v))],min(v))
@@ -684,18 +684,20 @@ print(''.join(map(str,a)))
 #9. create a string "ABCD" and convert into "abcd" without using lower and upper
 #method
 a = "ABCD"
-b = "abcd"
 for i in a:
-    for i in b:
-        a[0]= b[0]
-        print(i)
-        
+    if a=="ABCD":
+        print("abcd")
     
 
+def add(x,y):
+    return x+y
 
+print(add(2,4))
 
+def Multiply(x,y):
+    return x*y
 
-
+print(Multiply(2,3))
 
 
 

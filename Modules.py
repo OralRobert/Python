@@ -81,3 +81,22 @@ print(r.choice(l))
 R=['Big_boss','sholey','karan_arjun']
 r.shuffle(R)
 print(R)
+
+#import task #To import folder in python
+from task import add,Multiply
+print(add(10,2))
+print(Multiply(3,4))
+from task import * #to import all members of module
+print(dir())
+
+
+
+
+
+
+
+
+
+
+
+
